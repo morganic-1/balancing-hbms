@@ -1,22 +1,22 @@
 import crafttweaker.item.IItemStack;
 
 // List of Decor items
-val decor as IItemStack[] = [
+global decor as IItemStack[] = [
     
 ];
 
 // List of attachments items
-val attachment as IItemStack[] = [
+global attachment as IItemStack[] = [
     
 ];
 
 // List of gun part items
-val gunparts as IItemStack[] = [
+global gunparts as IItemStack[] = [
     
 ];
 
 // List of misc items
-val misc as IItemStack[] = [
+global misc as IItemStack[] = [
     <mwc:baseball_bat>,
     <mwc:night_stick>,
     <mwc:tactical_tomahawk>,
@@ -31,7 +31,7 @@ val misc as IItemStack[] = [
 ];
 
 // List of pistols
-val pistols as IItemStack[] = [
+global pistols as IItemStack[] = [
     <mwc:m1911>,
     <mwc:mas_21>,
     <mwc:aps>,
@@ -56,7 +56,7 @@ val pistols as IItemStack[] = [
 ];
 
 // List of SMGs/PDWs
-val smgs_pdws as IItemStack[] = [
+global smgs_pdws as IItemStack[] = [
     <mwc:mp40>,
     <mwc:apc9>,
     <mwc:s7_10_tricun>,
@@ -76,7 +76,7 @@ val smgs_pdws as IItemStack[] = [
 ];
 
 // List of rifles
-val rifles as IItemStack[] = [
+global rifles as IItemStack[] = [
     <mwc:m1_carbine>,
     <mwc:g43_gewehr>,
     <mwc:m1941_johnson_rifle>,
@@ -87,7 +87,7 @@ val rifles as IItemStack[] = [
 ];
 
 // List of assault rifles/carbines
-val assault_rifles as IItemStack[] = [
+global assault_rifles as IItemStack[] = [
     <mwc:m16a4>,
     <mwc:m16a1>,
     <mwc:ar15>,
@@ -115,7 +115,7 @@ val assault_rifles as IItemStack[] = [
 ];
 
 // List of battle rifles
-val battle_rifles as IItemStack[] = [
+global battle_rifles as IItemStack[] = [
     <mwc:scar_h_cqc>,
     <mwc:fnfal>,
     <mwc:mk14_ebr>,
@@ -124,7 +124,7 @@ val battle_rifles as IItemStack[] = [
 ];
 
 // List of DMR/Marksman rifles
-val dmr_marksman_rifles as IItemStack[] = [
+global dmr_marksman_rifles as IItemStack[] = [
     <mwc:m38_dmr>,
     <mwc:zbroyar_z10>,
     <mwc:m110_sass>,
@@ -134,7 +134,7 @@ val dmr_marksman_rifles as IItemStack[] = [
 ];
 
 // List of sniper/high power rifles
-val sniper_high_and_power_rifles as IItemStack[] = [
+global sniper_high_and_power_rifles as IItemStack[] = [
     <mwc:remington_700>,
     <mwc:sv98>,
     <mwc:m40a6>,
@@ -148,7 +148,7 @@ val sniper_high_and_power_rifles as IItemStack[] = [
 ];
 
 // List of LMGs to remove
-val lmgs as IItemStack[] = [
+global lmgs as IItemStack[] = [
     <mwc:m60e4>,
     <mwc:stonera1>,
     <mwc:m249>,
@@ -160,7 +160,7 @@ val lmgs as IItemStack[] = [
 ];
 
 // List of special guns
-val special as IItemStack[] = [
+global special as IItemStack[] = [
     <mwc:m134>,
     <mwc:m202>,
     <mwc:rpg7>,
@@ -173,7 +173,7 @@ val special as IItemStack[] = [
 import mods.jei.JEI.removeAndHide as rh;
 
 // Function to remove and hide items
-function removeAndHideItems(items as IItemStack[]) {
+global function removeAndHideItems(items as IItemStack[]) {
     for item in items {
         rh(item);
     }
