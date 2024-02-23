@@ -1,1 +1,0 @@
-static phase as int = 0;
